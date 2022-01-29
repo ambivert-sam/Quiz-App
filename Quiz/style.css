@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    font-family: Verdana;
+    font-size: 16px;
+    color: #000000;
+}
+
+header {
+    background-color: #218380;
+    color:#ffffff;
+    padding: 25px 20px;
+}
+header #time {
+    float: right;
+    margin-right: 40px;
+}
+.container{
+    border: 2px solid #ffffff;
+    border-style: groove;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    display: block;
+    width: 40%;
+    padding: 50px 50px;
+    margin : 80px auto;
+
+}
+.btn{
+    background-color: #218380;
+    height: 45px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 12px 12px;
+    border-radius: 8px;
+    border: none;
+}
+#btn2 {
+    margin-left: 6px;
+}
+#questionBox {
+    display: none;
+    width: 50%;
+}
+.options {
+    background-color: #218380;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+
+.ans{
+    display: none;
+}
+
+#endQuiz {
+    display: none;
+    font-size: 20px;
+    width: 30%;
+}
+
+#highScoresBox {
+    display: none;
+    width: 20%;
+    
+}
+
+@media screen and (max-width: 430px){
+    .container{
+        width: 80%;
+        padding: 30px 18px;
+    }
+
+    #questionBox{
+        width: 80%;
+        padding: 30px 18px;
+    }
+    #endQuiz{
+        width: 80%;
+        padding: 30px 18px;
+    }
+    #highScoresBox{
+        width: 60%;
+        padding: 30px 18px;
+    }
+
+    #btn2{
+        margin-top: 5px;
+    }
+    
+}

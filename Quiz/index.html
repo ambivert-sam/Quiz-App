@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <a id=leaderboard onclick="showHighScores()">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a> 
+        <a id=time>Time: <span id="t_count"></span></a>
+
+
+    </header>
+    <main>
+        <!-- starting box  -->
+        <div id="box1" class="container">
+            <h2>Coding Quiz Challange</h2>
+            <p>Try to answer the following code-related question within the time limit. </p>
+            <p>Keep in mind that incorrect answer will penalize your score/time by ten seconds! </p>
+            <button id="btn1" class="btn" type="button" onclick="startQuiz()">Start Quiz</button>
+            
+        </div>
+
+        <!-- Questions after starting quiz -->
+        <div id="questionBox" class="container">
+            <h2 id="question"></h2>
+            <p id="1" class="options" onclick="checkAns(this.id)"></p>
+            <p id="2" class="options" onclick="checkAns(this.id)"></p>
+            <p id="3" class="options" onclick="checkAns(this.id)"></p>
+            <p id="4" class="options" onclick="checkAns(this.id)"></p>
+            <div id="ansBox" class="ans">
+                <hr/>
+                <p id="answerText"></p>
+            </div>
+        </div>
+        <div id="endQuiz" class="container">
+            <h2>All done</h2>
+            <p>Your final score is <span id="score"></span> </p>
+            <form>
+                <label for="name">Enter initials: </label>
+                <input id="name" type="text" style="font-size: 20px; width: 85px;">
+                <button id="btn2" class="btn" type="button" onclick="onSubmit()">Submit</button>
+            </form>
+        </div>
+
+        <div id="highScoresBox" class="container">
+            <h2>Highscores</h2>
+            <ol id="highScores">
+                
+            </ol>
+            <button class="btn" onclick="Home()">Go Back</button>
+            <button class="btn" onclick="clearStorage()">clear Highscores</button>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
